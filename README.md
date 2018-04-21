@@ -1,1 +1,1 @@
-# finfit
+# finfitness
