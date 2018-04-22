@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
+import { ModalController } from 'ionic-angular';
+import { ModalPage } from '../modal/modal';
 /**
  * Generated class for the LoginPage page.
  *
@@ -15,7 +17,7 @@ import { SignupPage } from '../signup/signup';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl : ModalController) {
   }
 
   ionViewDidLoad() {
@@ -24,6 +26,11 @@ export class LoginPage {
 
   gotosignup(){
     this.navCtrl.push(SignupPage);
+  }
+
+  public openModal(){
+    let modal = this.modalCtrl.create(ModalPage);
+    modal.present();
   }
 
 }
