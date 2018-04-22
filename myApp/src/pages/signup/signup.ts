@@ -34,7 +34,7 @@ export class SignupPage {
 			var link = 'C:\Users\Chirag\Downloads\error.json.txt';
 
 			//using http post as we are passing password.
-			this.http.post(link, {fn : data.fname, ln : data.lname, em: data.email, ps : data.password, cp: data.confirm, pic : data.photo })
+		/*	this.http.post(link, {fn : data.fname, ln : data.lname, em: data.email, ps : data.password, cp: data.confirm, pic : data.photo })
 			.then(function (res){	 //if a response is recieved from the server.
 
 				$scope.response = res.data.result; //contains Register Result
@@ -67,7 +67,7 @@ export class SignupPage {
 				});
 
 
-			});
+			}); */
 	}
 
   fileChange(event){
