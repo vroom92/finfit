@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {FormBuilder, Validators} from '@angular/common';
+//import {FormBuilder, Validators} from '@angular/common';
 
 /**
  * Generated class for the SignupPage page.

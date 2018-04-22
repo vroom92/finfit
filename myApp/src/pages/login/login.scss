@@ -1,3 +1,38 @@
-page-login {
+.dollarlogo{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.heading{
+  text-align: center;
+  font-family: "American Typewriter", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.center{
+  margin: auto;
+  width: 20%;
+  //margin-left: 800px;
+  //margin-top: -150px;
+  //position: absolute;
+  //border: 3px solid #73AD21;
+}
+.btn{
+  width:80%;
+  margin-left: 20px;
+}
+.fb{
+  height: 40px;
+  width: 210px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardsize{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
