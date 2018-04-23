@@ -80,8 +80,13 @@ page-yosemite {
     margin-left: -100px;
   }
   .stupidbtn{
-    text-transform: none;
-    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #679efc;
+    height: 20px;
+    //width: 100%;
+    //font-weight: bold;
+    color: #FFF;
+    font-family: "Lato";
   }
-
 }
