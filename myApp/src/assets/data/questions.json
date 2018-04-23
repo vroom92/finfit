@@ -1,9 +1,9 @@
 {
   "banking" : [
     {
-    "question" : "Which of the following statement represents the difference between a Checking and Savings bank account?",
-    "option1" : "A checking account is designed for everyday money transactions whilst money in the savings account meant to stay in the account so that it might earn interest over time.",
-    "option2" : "Savings accounts have higher interest rates than checking accounts, meaning it is better to let large sums of money (e.g., an emergency fund) sit in savings instead of checking.",
+    "question" : "Select the difference between a Checking and Savings bank account?",
+    "option1" : "A checking account doesn't earn interest while a savings account does",
+    "option2" : "Savings accounts have higher interest rates than checking accounts",
     "option3" : "There could be monthly withdrawal restrictions on Savings accounts",
     "option4" : "All of the above",
     "answer" : "option4"
@@ -17,10 +17,10 @@
       "answer" : "option1"
     },
     {
-      "question" : " Imagine that the interest rate on your savings account is 1 percent a year and inflation is 2 percent a year. After one year, would the money in the account buy more than it does today, exactly the same or less than today?",
-      "option1" : "More",
-      "option2" : "Same",
-      "option3" : "Less",
+      "question" : "The interest rate on your savings account is 1% per year and inflation is 2% per year. After a year, would the money in the account be able to:",
+      "option1" : "Buy More",
+      "option2" : "The Same amount",
+      "option3" : "Buy Less",
       "option4" : "",
       "answer" : "option1"
     },
