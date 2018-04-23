@@ -6,8 +6,19 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>yosemite</ion-title>
+  <ion-navbar hideBackButton>
+    <ion-row>
+      <ion-col col-md-6>
+    <progress-bar progress="25" color="#488aff">
+    </progress-bar>
+  </ion-col>
+    <ion-col col-md-3>
+      Timer
+    </ion-col>
+    <ion-col col-md-3>
+      Score
+    </ion-col>
+  </ion-row>
   </ion-navbar>
 
 </ion-header>
@@ -15,10 +26,17 @@
 
 <ion-content padding>
 
-  <progress-bar progress="25" color="#488aff">
-  </progress-bar>
 
-  <div class="fill">
+
+  <!-- <div class="fill">
     <img src="../../assets/imgs/Yosemite/quiz/1.jpg"/>
-  </div>
+  </div> -->
+
+  <section class = "question1"><div class="caption"><span class = "border">QUESTION</span></div></section>
+  <section class = "question2"></section>
+  <section class = "question3"></section>
+  <section class = "question4"></section>
+
+
+
 </ion-content>
