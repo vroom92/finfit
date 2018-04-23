@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 import { ModalPage } from '../pages/modal/modal';
 import { ScoreBoardPage } from '../pages/score-board/score-board';
 import {  YosemitePage } from '../pages/yosemite/yosemite';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,7 +25,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     SignupPage,
     ModalPage,
     ScoreBoardPage,
-    YosemitePage
+    YosemitePage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     SignupPage,
     ModalPage,
     ScoreBoardPage,
-    YosemitePage
+    YosemitePage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
