@@ -1,0 +1,36 @@
+page-score-board {
+  .tabs{
+    margin: auto;
+    width: 80%;
+    height: 15%;
+    margin-top: 5%;
+    margin-left: 42%;
+    margin-right: 50%;
+  }
+.datatable-header {
+      background: rgba(164, 192, 214,1);
+      padding: 1em 0 0 1em;
+   }
+
+ .datatable-header-cell {
+    font-size: 1.2em;
+    font-weight: bold;
+ }
+
+ .datatable-body-row {
+    padding: 0;
+ }
+
+ .datatable-row-even {
+    background: rgba(240, 240, 240, 1);
+ }
+
+ .datatable-row-odd {
+    background: rgba(255, 255, 255,1);
+ }
+
+ .datatable-body-cell {
+    font-size: 1.2em;
+    padding: 1em;
+ }
+}
