@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 
 /**
@@ -31,11 +31,20 @@ export class YosemitePage {
   public questions: any;
   public progress: number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public _HTTP : HttpClient) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
   }
   timeInSeconds: number= 30;
   timer: CountdownTimer;
 
+
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'ScoreBoard',
+      subTitle: 'Chaa gya tu to ',
+      buttons: ['Dismiss']
+    });
+    alert.present();
+  }
   ngOnInit() {
     this.initTimer();
     this.progress=0;
@@ -115,6 +124,7 @@ export class YosemitePage {
   changeProgress(answer){
     console.log(answer);
     this.progress+=25;
+    this.presentAlert();
   }
 
 }
