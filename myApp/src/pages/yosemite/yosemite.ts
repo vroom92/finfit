@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 
@@ -8,11 +8,9 @@ import { HttpClient } from '@angular/common/http';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-<<<<<<< HEAD
  export interface Config {
 	banking: string;
 }
-=======
  export interface CountdownTimer {
    seconds: number;
    secondsRemaining: number;
@@ -22,7 +20,6 @@ import { HttpClient } from '@angular/common/http';
    displayTime: string;
  }
 
->>>>>>> 3e5c4d53869c1e23527e678baa8a81efe528593e
 
 @IonicPage()
 @Component({
@@ -30,16 +27,12 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'yosemite.html',
 })
 export class YosemitePage {
-<<<<<<< HEAD
+
   public questions: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public _HTTP : HttpClient) {
-=======
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
->>>>>>> 3e5c4d53869c1e23527e678baa8a81efe528593e
   }
-
-  timeInSeconds: any= 30;
+  timeInSeconds: number= 30;
   timer: CountdownTimer;
 
   ngOnInit() {
@@ -106,7 +99,6 @@ export class YosemitePage {
   }
 
   ionViewDidLoad() {
-<<<<<<< HEAD
     console.log('ionViewDidLoad YosemitePage');
     this._HTTP
     .get<Config>('../../assets/data/questions.json')
@@ -115,10 +107,7 @@ export class YosemitePage {
       this.questions=data.banking;
        console.log(this.questions[0].options);
     });
-=======
-      console.log('ionViewDidLoad YosemitePage');
 
->>>>>>> 3e5c4d53869c1e23527e678baa8a81efe528593e
   }
 
 }
