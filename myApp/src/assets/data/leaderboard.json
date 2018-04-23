@@ -1,0 +1,30 @@
+{
+   "leaderboard" : [
+      {
+         "rank" : "1",
+         "name" : "Gyan",
+         "points" : "500"
+      },
+      {
+         "rank" : "2",
+         "name" : "Varun",
+         "points" : "450"
+      },
+      {
+         "rank" : "3",
+         "name" : "Saurabh",
+         "points" : "400"
+      },
+      {
+         "rank" : "...",
+         "name" : "...",
+         "points" : "..."
+      },
+      {
+         "rank" : "66",
+         "name" : "Chirag",
+         "points" : "260"
+      }
+
+   ]
+}
