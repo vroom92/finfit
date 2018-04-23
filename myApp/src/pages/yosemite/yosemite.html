@@ -31,11 +31,16 @@
   <!-- <div class="fill">
     <img src="../../assets/imgs/Yosemite/quiz/1.jpg"/>
   </div> -->
-
-  <section class = "question1"><div class="caption"><span class = "border">QUESTION</span></div></section>
-  <section class = "question2"></section>
-  <section class = "question3"></section>
-  <section class = "question4"></section>
+  <div *ngFor=" let item of questions" >
+  <section class = "question{{item.id}}"><div class="caption">
+    <span class = "border">QUESTION{{item.id}} {{item.question}}
+      <div *ngFor=" let option of item.options">
+        {{option}}
+      </div>
+    </span>
+    </div>
+    </section>
+  </div>
 
 
 

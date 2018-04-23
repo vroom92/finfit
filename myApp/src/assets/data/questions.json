@@ -1,35 +1,44 @@
 {
   "banking" : [
     {
+      "id": 1,
     "question" : "Select the difference between a Checking and Savings bank account?",
-    "option1" : "A checking account doesn't earn interest while a savings account does",
-    "option2" : "Savings accounts have higher interest rates than checking accounts",
-    "option3" : "There could be monthly withdrawal restrictions on Savings accounts",
-    "option4" : "All of the above",
+    "options": [
+       "A checking account doesn't earn interest while a savings account does",
+        "Savings accounts have higher interest rates than checking accounts",
+        "There could be monthly withdrawal restrictions on Savings accounts",
+        "All of the above"
+    ],
     "answer" : "option4"
     },
     {
+      "id": 2,
       "question" : "Can I use my debit card to withdraw cash from an ATM ?",
-      "option1" : "Yes",
-      "option2" : "No",
-      "option3" : "",
-      "option4" : "",
+      "options": [
+         "Yes",
+          "No"
+      ],
       "answer" : "option1"
     },
     {
+      "id": 3,
       "question" : "The interest rate on your savings account is 1% per year and inflation is 2% per year. After a year, would the money in the account be able to:",
-      "option1" : "Buy More",
-      "option2" : "The Same amount",
-      "option3" : "Buy Less",
-      "option4" : "",
-      "answer" : "option1"
+      "options": [
+         "Buy More",
+          "The Same Amount",
+          "Buy Less"
+      ],
+      "answer" : "option3"
     },
     {
+      "id": 4,
       "question" : "In addition to visiting a branch to deposit a check, how else can I deposit a check in my account",
-      "option1" : "Using my bank’s mobile app",
-      "option2" : "Using my bank’s ATM machine",
-      "option3" : "By mailing my check in",
-      "option4" : "All of the above",
+      "options": [
+         "Using my bank’s mobile app",
+          "Using my bank’s ATM machine",
+          "By mailing my check in",
+          "All of the above"
+      ],
       "answer" : "option4"
     }
   ]
