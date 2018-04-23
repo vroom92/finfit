@@ -29,6 +29,7 @@ import { HttpClient } from '@angular/common/http';
 export class YosemitePage {
 
   public questions: any;
+  public progress: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public _HTTP : HttpClient) {
   }
@@ -37,6 +38,7 @@ export class YosemitePage {
 
   ngOnInit() {
     this.initTimer();
+    this.progress=0;
   }
 
   hasFinished() {
@@ -108,6 +110,11 @@ export class YosemitePage {
        console.log(this.questions[0].options);
     });
 
+  }
+
+  changeProgress(answer){
+    console.log(answer);
+    this.progress+=25;
   }
 
 }

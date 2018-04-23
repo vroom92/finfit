@@ -9,7 +9,7 @@
   <ion-navbar hideBackButton>
     <ion-row>
       <ion-col col-md-6>
-    <progress-bar progress="25" color="#488aff">
+    <progress-bar progress={{progress}} color="#488aff">
     </progress-bar>
   </ion-col>
     <ion-col col-md-3>
@@ -61,7 +61,8 @@
   <section class = "question{{item.id}}"><div class="caption">
     <span class = "border">QUESTION{{item.id}} {{item.question}}
       <div *ngFor=" let option of item.options">
-        {{option}}
+          <!-- <label><input type="radio" name="optradio{{item.id}}" value="{{option}}">{{option}}</label> -->
+          <button ion-button (click)="changeProgress(option)">{{option}}</button>
       </div>
     </span>
     </div>
