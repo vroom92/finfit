@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { ModalController } from 'ionic-angular';
 import { ModalPage } from '../modal/modal';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the LoginPage page.
  *
@@ -17,9 +18,43 @@ import { ModalPage } from '../modal/modal';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl : ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl : ModalController, public alertCtrl: AlertController) {
   }
-
+  gotohome(){
+    this.navCtrl.push(HomePage);
+  }
+  loginPopUp() {
+    let alert = this.alertCtrl.create({
+      title: 'Login',
+      inputs: [
+        {
+          name: 'username',
+          placeholder: 'Username'
+        },
+        {
+          name: 'password',
+          placeholder: 'Password',
+          type: 'password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Login',
+          handler: data => {
+            this.gotohome();
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
