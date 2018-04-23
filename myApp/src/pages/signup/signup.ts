@@ -31,7 +31,7 @@ export class SignupPage {
 
     console.log("here");
 
-			var link = 'C:\Users\Chirag\Downloads\error.json.txt';
+		//	var link = 'C:\Users\Chirag\Downloads\error.json.txt';
 
 			//using http post as we are passing password.
 		/*	this.http.post(link, {fn : data.fname, ln : data.lname, em: data.email, ps : data.password, cp: data.confirm, pic : data.photo })

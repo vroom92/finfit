@@ -7,11 +7,13 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { ModalPage } from '../pages/modal/modal';
+import { ScoreBoardPage } from '../pages/score-board/score-board';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 @NgModule({
   declarations: [
     MyApp,
@@ -19,12 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     ListPage,
     LoginPage,
     SignupPage,
-    ModalPage
+    ModalPage,
+    ScoreBoardPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    NgxDatatableModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListPage,
     LoginPage,
     SignupPage,
-    ModalPage
+    ModalPage,
+    ScoreBoardPage
   ],
   providers: [
     StatusBar,
