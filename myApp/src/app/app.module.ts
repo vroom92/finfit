@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
+import {ProgressBarModule} from "angular-progress-bar";
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -30,7 +30,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    ProgressBarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
