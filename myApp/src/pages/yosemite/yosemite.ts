@@ -27,23 +27,37 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'yosemite.html',
 })
 export class YosemitePage {
+  public tscore: number = 0;
 
   public questions: any;
   public progress: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
   }
-  timeInSeconds: number= 30;
+  timeInSeconds: number= 15;
   timer: CountdownTimer;
 
 
-  presentAlert() {
+  presentAlert(text) {
     let alert = this.alertCtrl.create({
       title: 'ScoreBoard',
-      subTitle: 'Chaa gya tu to ',
-      buttons: ['Dismiss']
+      subTitle: text,
+      buttons: [
+        {
+          text: 'OKAY',
+          handler: data => {
+            this.goToNext();
+          }
+        }
+      ]
     });
     alert.present();
+  }
+
+  goToNext(){
+    //this.timeInSeconds=15;
+    this.initTimer();
+    this.startTimer();
   }
   ngOnInit() {
     this.initTimer();
@@ -118,12 +132,25 @@ export class YosemitePage {
       this.questions=data.banking;
        console.log(this.questions[0].options);
     });
+    this.startTimer();
 
   }
 
-  changeProgress(answer){
-    console.log(answer);
+  changeProgress(userchoice,id){
+    console.log(userchoice,id);
+    console.log(this.questions[id-1].answer);
+    this.pauseTimer();
+    if(userchoice===this.questions[id-1].answer){
+      this.tscore += 10*this.timer.secondsRemaining;
+      this.presentAlert("Correct "+10*this.timer.secondsRemaining+" Total Score " +this.tscore);
+    }
+    else{
+      this.tscore+=0;
+      this.presentAlert("Incorrect 0 "+" Total Score " +this.tscore);
+    }
     this.progress+=25;
-    this.presentAlert();
+
+    //this.startTimer();
+
   }
 }
