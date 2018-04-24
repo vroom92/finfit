@@ -41,7 +41,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.65;
+    opacity: 0.7;
     position:relative;
 
 
@@ -68,19 +68,23 @@ page-yosemite {
   }
   span.border{
     background-color: transparent;
-    font-size:25px;
+    font-size:30px;
     font-family: "Lato";
-    color: #f7f7f7;
+    //color: #f7f7f7;
+    color: black;
     font-weight: bold;
   }
   .caption{
     position: absolute;
     left:0;
-    top: 40%;
+    top: 25%;
     width: 100%;
     text-align: center;
     color: #000;
 
+  }
+  .ques{
+    background-color: rgba(255,255,255,0.3);
   }
   div {
     display: block;
