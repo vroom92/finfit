@@ -13,6 +13,10 @@ import { ProfilePage } from '../profile/profile';
  export interface Config {
 	banking: string;
 }
+
+export interface Config {
+ leaderboard: string;
+}
  export interface CountdownTimer {
    seconds: number;
    secondsRemaining: number;
@@ -31,7 +35,7 @@ import { ProfilePage } from '../profile/profile';
 export class YosemitePage {
   @ViewChild(Content) content: Content;
   public tscore: number = 0;
-
+  public config : Config;
   public questions: any;
   public progress: number;
   public scroller: number =0;
@@ -89,7 +93,7 @@ export class YosemitePage {
     // this.questionNumber=this.questionNumber+1;
     // let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#question'+ this.questionNumber);
     // this.pageScrollService.start(pageScrollInstance);
-    this.scroller=this.scroller+790;
+    this.scroller=this.scroller+810;
     this.content.scrollTo(0,this.scroller,1000);
   }
   ngOnInit() {
@@ -176,11 +180,13 @@ export class YosemitePage {
     if(userchoice===this.questions[id-1].answer){
       this.tscore += 10*this.timer.secondsRemaining;
       this.presentAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
-      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore);
+      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore+"<br><br><b>Explanation:</b> "+
+      this.questions[id-1].description);
     }
     else{
       this.tscore+=0;
-      this.presentAlert("Incorrect 0 "+" Total Score " +this.tscore);
+      this.presentAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
+      +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
     this.progress+=25;
 
@@ -190,16 +196,18 @@ export class YosemitePage {
 
   changeProgressFinal(userchoice,id){
     console.log(userchoice,id);
-    console.log(this.questions[id-1].answer);
+    console.log(this.questions[id-1].description);
     this.pauseTimer();
     if(userchoice===this.questions[id-1].answer){
       this.tscore += 10*this.timer.secondsRemaining;
       this.lastAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
-      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore);
+      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore+"<br><br><b>Explanation:</b> "+
+      this.questions[id-1].description);
     }
     else{
       this.tscore+=0;
-      this.lastAlert("Incorrect 0 "+" Total Score " +this.tscore);
+      this.lastAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
+      +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
     this.progress+=25;
 

@@ -1,36 +1,51 @@
 page-score-board {
-  .tabs{
-    margin: auto;
-    width: 80%;
-    height: 15%;
+  .getstart { background-image: url('../../assets/imgs/bg.jpg');
+     height: 100%;
+     width: 100%;
+     background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  .table{
+    margin-left : 10%;
+    margin-right : 10%;
     margin-top: 5%;
-    margin-left: 42%;
-    margin-right: 50%;
   }
 .datatable-header {
-      background: rgba(164, 192, 214,1);
+      //background: rgba(240, 240, 240, 1);
       padding: 1em 0 0 1em;
+      color : White;
    }
 
  .datatable-header-cell {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
+    padding: 1em;
+    margin-top : -3.2%;
+    margin-left : -1.0%;
+    color : Black;
+    //color : Blue;
  }
 
  .datatable-body-row {
     padding: 0;
  }
 
- .datatable-row-even {
-    background: rgba(240, 240, 240, 1);
+ .datatable-row-odd {
+    //background: rgba(240, 240, 240, 1);
+    color : Black;
  }
 
- .datatable-row-odd {
-    background: rgba(255, 255, 255,1);
+ .datatable-row-even {
+    //background: rgba(255, 255, 255,1);
+    color : Black;
  }
 
  .datatable-body-cell {
     font-size: 1.2em;
     padding: 1em;
+    margin-top : -1.2%;
+    color : Black;
  }
 }

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 //import {FormBuilder, Validators} from '@angular/common';
+import { LoginPage} from '../login/login';
 
 /**
  * Generated class for the SignupPage page.
@@ -20,54 +21,32 @@ import { HttpClient } from '@angular/common/http';
 export class SignupPage {
 
   img1:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignupPage');
   }
-
+  confirmEmailAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Verification',
+      subTitle: '<br>A confirmation E-mail has been sent to your registered mail id!',
+      buttons: [
+        {
+          text: 'OKAY',
+          handler: data => {
+            this.navCtrl.setRoot(LoginPage);
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
   signup(data){
 
     console.log("here");
+    this.confirmEmailAlert();
 
-		//	var link = 'C:\Users\Chirag\Downloads\error.json.txt';
-
-			//using http post as we are passing password.
-		/*	this.http.post(link, {fn : data.fname, ln : data.lname, em: data.email, ps : data.password, cp: data.confirm, pic : data.photo })
-			.then(function (res){	 //if a response is recieved from the server.
-
-				$scope.response = res.data.result; //contains Register Result
-
-				//Shows the respective popup and removes back link
-				if($scope.response.created=="1"){
-						$scope.title="Account Created!";
-						$scope.template="Your account has been successfully created!";
-
-						//no back option
-						$ionicHistory.nextViewOptions({
-							disableAnimate: true,
-							disableBack: true
-						});
-						// the user is redirected to login page after sign up
-						$state.go('login', {}, {location: "replace", reload: true});
-
-				}else if($scope.response.exists=="1"){
-					$scope.title="Email Already exists";
-					$scope.template="Please click forgot password if necessary";
-
-				}else{
-					$scope.title="Failed";
-					$scope.template="Contact Our Technical Team";
-				}
-
-				var alertPopup = $ionicPopup.alert({
-						title: $scope.title,
-						template: $scope.template
-				});
-
-
-			}); */
 	}
 
   fileChange(event){
