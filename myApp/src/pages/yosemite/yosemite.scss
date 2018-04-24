@@ -98,16 +98,20 @@ page-yosemite {
   }
   span.border{
     background-color: transparent;
-    font-size:30px;
+    font-size:40px;
     font-family: "Lato";
     //color: #f7f7f7;
     color: black;
     font-weight: bold;
   }
+  .optText{
+    font-size:22px;
+    font-family: "Lato";
+  }
   .caption{
     position: absolute;
     left:0;
-    top: 25%;
+    top: 20%;
     width: 100%;
     text-align: center;
     color: #000;
