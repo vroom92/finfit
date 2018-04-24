@@ -188,7 +188,7 @@ export class YosemitePage {
       this.presentAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
-    this.progress+=25;
+    this.progress+=12.5;
 
     //this.startTimer();
 
@@ -209,7 +209,7 @@ export class YosemitePage {
       this.lastAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
-    this.progress+=25;
+    this.progress+=12.5;
 
     //this.startTimer();
 
