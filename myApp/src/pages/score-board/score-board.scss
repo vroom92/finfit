@@ -1,4 +1,6 @@
 page-score-board {
+  .getstart { background-image: url('../../assets/imgs/bg.jpg');
+  }
 
   .table{
     margin-left : 10%;
@@ -6,8 +8,9 @@ page-score-board {
     margin-top: 5%;
   }
 .datatable-header {
-      background: rgba(240, 240, 240, 1);
+      //background: rgba(240, 240, 240, 1);
       padding: 1em 0 0 1em;
+      color : White;
    }
 
  .datatable-header-cell {
@@ -16,6 +19,7 @@ page-score-board {
     padding: 1em;
     margin-top : -3.2%;
     margin-left : -1.0%;
+    color : Black;
     //color : Blue;
  }
 
@@ -24,19 +28,19 @@ page-score-board {
  }
 
  .datatable-row-odd {
-    background: rgba(240, 240, 240, 1);
-    color : Blue;
+    //background: rgba(240, 240, 240, 1);
+    color : Black;
  }
 
  .datatable-row-even {
-    background: rgba(255, 255, 255,1);
-    color : Blue;
+    //background: rgba(255, 255, 255,1);
+    color : Black;
  }
 
  .datatable-body-cell {
     font-size: 1.2em;
     padding: 1em;
     margin-top : -1.2%;
-    color : Blue;
+    color : Black;
  }
 }
