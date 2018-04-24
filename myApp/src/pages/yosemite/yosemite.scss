@@ -67,7 +67,7 @@ page-yosemite {
   .caption{
     position: absolute;
     left:0;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -117,5 +117,9 @@ page-yosemite {
     //font-weight: bold;
     color: #FFF;
     font-family: "Lato";
+  }
+  .yosembutton{
+    padding-top: 12%;
+    padding-left: 40px;
   }
 }

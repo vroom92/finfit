@@ -142,7 +142,8 @@ export class YosemitePage {
     this.pauseTimer();
     if(userchoice===this.questions[id-1].answer){
       this.tscore += 10*this.timer.secondsRemaining;
-      this.presentAlert("Correct "+10*this.timer.secondsRemaining+" Total Score " +this.tscore);
+      this.presentAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
+      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore);
     }
     else{
       this.tscore+=0;

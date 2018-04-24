@@ -8,46 +8,27 @@
 
   <ion-navbar hideBackButton>
     <ion-row>
-      <!--<ion-col col-md-1>
-        <button ion-button menuToggle>
+      <ion-col col-md-1>
+        <button class="yosembutton" ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
-      </ion-col>-->
-      <ion-col col-md-6>
+      </ion-col>
+      <ion-col col-md-5>
     <progress-bar progress={{progress}} color="#488aff">
     </progress-bar>
   </ion-col>
-    <ion-col col-md-3>
+  <ion-col col-md-1>
+  </ion-col>
+    <ion-col col-md-1>
       <!--<ion-card *ngIf="timer"> -->
       	<!--<ion-card-header> -->
         <div class = "cdTimer">
       		<button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>
       		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
         </div>
-
-        <!--</ion-card-header> -->
-      	<!--<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">
-      		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
-                  <ion-icon name="refresh"></ion-icon>
-                  Restart
-              </button>
-      		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
-                  <ion-icon name="pause"></ion-icon>
-                  Pause
-              </button>
-      		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
-                  <ion-icon name="play"></ion-icon>
-                  Resume
-              </button>
-      		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">
-                  <ion-icon name="play"></ion-icon>
-                  Start
-              </button>
-      	</ion-item> -->
-      <!--</ion-card> -->
     </ion-col>
-    <ion-col col-md-3>
-      Score
+    <ion-col col-md-4>
+      <button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">Total Score: {{tscore}}</button>
     </ion-col>
   </ion-row>
   </ion-navbar>
@@ -55,7 +36,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <div *ngFor=" let item of questions" >
   <section class = "question{{item.id}}"><div class="caption">
     <span class = "border">QUESTION{{item.id}} {{item.question}}    </span>

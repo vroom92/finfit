@@ -11,7 +11,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) { }
 
   gototrail(){
-    this.navCtrl.push(YosemitePage);
-    //this.navCtrl.setRoot(YosemitePage);
+    //this.navCtrl.push(YosemitePage);
+    this.navCtrl.setRoot(YosemitePage);
   }
 }
