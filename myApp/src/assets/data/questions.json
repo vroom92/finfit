@@ -44,6 +44,54 @@
       ],
       "answer" : "All of the above",
       "description": "Depending on the bank or credit union you use, there are following ways to make deposits. Deposit with your mobile device, visit a branch, Use an ATM or use the mail."
+    },
+    {
+      "id": 5,
+    "question" : "What is a W 2 form ?",
+    "options": [
+       "The W-2 form reports an employee's annual wages and the amount of taxes withheld from his or her paycheck",
+        "The W-2 form is a form that an employee fills in to report income from gambling",
+        "The W-2 form is used to enroll an employee in a program to receive gifts",
+        "All of the above"
+    ],
+    "answer" : "The W-2 form reports an employee's annual wages and the amount of taxes withheld from his or her paycheck",
+    "description": "The W-2 form is the form that an employer must send to an employee and the Internal Revenue Service (IRS) at the end of the year. The W-2 form reports an employee's annual wages and the amount of taxes withheld from his or her paycheck."
+    },
+    {
+      "id": 6,
+    "question" : "What is the due date for filing of taxes for individuals",
+    "options": [
+       "April 17th",
+        "June 30th",
+        "Dec 31st",
+        "Jan 1st"
+    ],
+    "answer" : "April 17th",
+    "description": "Tax Day for Tax Year 2017 was April 18 2017. Filing deadline and due date for Federal Income Tax Returns for Tax Year 2017 was April 18 2017. Tax filing date is usually around mid of April each year. Due dates for State Income Tax Returns vary by state."
+    },
+    {
+      "id": 7,
+    "question" : "When you invest in an employer's retirement savings plan such as a 401(k), your contributions are taxed:",
+    "options": [
+       "Either before you invest them or when you withdraw them during retirement, but not both times.",
+        "Both before you invest them and when you withdraw them during retirement.",
+        "Once a year on or before April 15.",
+        "When you reach age 65."
+    ],
+    "answer" : "Either before you invest them or when you withdraw them during retirement, but not both times.",
+    "description": "When you take 401(k) withdrawal the full amount is taxable income and the tax rate will be your regular income tax rate. Capital gains taxes apply to gains you generate on investments not in a retirement plan. Gains on investments owned for longer than one year are taxed at a lower rate than your regular income."
+    },
+    {
+      "id": 8,
+    "question" : "Which of these US states levies state income tax?",
+    "options": [
+       "Alaska",
+        "Florida",
+        "Texas",
+        "New Jersey"
+    ],
+    "answer" : "New Jersey",
+    "description": "Seven U.S. states currently don't have an income tax: Alaska, Florida, Nevada, South Dakota, Texas, Washington and Wyoming. And residents of New Hampshire and Tennessee are also spared from handing over an extra chunk of their paycheck on April 15, though they do pay tax on dividends and income from investments."
     }
   ]
 }
