@@ -9,7 +9,8 @@
         "There could be monthly withdrawal restrictions on Savings accounts",
         "All of the above"
     ],
-    "answer" : "All of the above"
+    "answer" : "All of the above",
+    "description": "A checking account is a type of bank deposit account that is designed for everyday money transactions. Savings accounts have higher interest rates than checking accounts, meaning it is better to let large sums of money sit in savings instead of checking."
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
          "Yes",
           "No"
       ],
-      "answer" : "Yes"
+      "answer" : "Yes",
+      "description": "A debit card is a plastic payment card that can be used instead of cash when making purchases. It is similar to a credit card, but unlike a credit card, the money comes directly from the user's bank account when performing a transaction."
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
           "The Same Amount",
           "Buy Less"
       ],
-      "answer" : "Buy Less"
+      "answer" : "Buy Less",
+      "description": "In order for your money to be 'worth' the same amount, you will need the income you receive to increase by at least the rate of inflation each year. If it doesn't, your money will be losing value in real terms."
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
           "By mailing my check in",
           "All of the above"
       ],
-      "answer" : "All of the above"
+      "answer" : "All of the above",
+      "description": "Depending on the bank or credit union you use, there are following ways to make deposits. Deposit with your mobile device, visit a branch, Use an ATM or use the mail."
     }
   ]
 }
