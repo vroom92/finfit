@@ -2,7 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { Content } from 'ionic-angular';
-
+import { ScoreBoardPage } from '../score-board/score-board';
+import { ProfilePage } from '../profile/profile';
 /**
  * Generated class for the YosemitePage page.
  *
@@ -56,10 +57,30 @@ export class YosemitePage {
     alert.present();
   }
 
+  lastAlert(text) {
+    let alert = this.alertCtrl.create({
+      title: 'ScoreBoard',
+      subTitle: text,
+      buttons: [
+        {
+          text: 'ScoreBoard',
+          handler: data => {
+            this.navCtrl.setRoot(ScoreBoardPage);
+          }
+        },
+        {
+          text: 'Profile',
+          handler: data => {
+            this.navCtrl.setRoot(ProfilePage);
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
 
   goToNext(){
     //this.timeInSeconds=15;
-    let scrollTop = this.content.scrollTop;
     //let contentHeight = dimensions.contentHeight;
     //let scrollHeight = dimensions.scrollHeight;
 
@@ -160,6 +181,25 @@ export class YosemitePage {
     else{
       this.tscore+=0;
       this.presentAlert("Incorrect 0 "+" Total Score " +this.tscore);
+    }
+    this.progress+=25;
+
+    //this.startTimer();
+
+  }
+
+  changeProgressFinal(userchoice,id){
+    console.log(userchoice,id);
+    console.log(this.questions[id-1].answer);
+    this.pauseTimer();
+    if(userchoice===this.questions[id-1].answer){
+      this.tscore += 10*this.timer.secondsRemaining;
+      this.lastAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
+      10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore);
+    }
+    else{
+      this.tscore+=0;
+      this.lastAlert("Incorrect 0 "+" Total Score " +this.tscore);
     }
     this.progress+=25;
 

@@ -42,9 +42,8 @@
     <span class = "border">Question {{item.id}}<br>
       {{item.question}}    </span>
       <div *ngFor="let option of item.options">
-           <!-- <label><input type="radio" name="optradio{{item.id}}" value="{{option}}">{{option}}</label> -->
-           <!-- <button>{{option}}</button> -->
-          <button class="buttonCustom" (click)="changeProgress(option,item.id)">{{option}}</button>
+        <button class="buttonCustom" *ngIf="item.id < 4" (click)="changeProgress(option,item.id)">{{option}}</button>
+        <button class="buttonCustom" *ngIf="item.id == 4" (click)="changeProgressFinal(option,item.id)">{{option}}</button>
       </div>
     </div>
     </section>
