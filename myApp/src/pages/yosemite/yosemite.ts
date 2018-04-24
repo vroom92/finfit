@@ -89,7 +89,7 @@ export class YosemitePage {
     // this.questionNumber=this.questionNumber+1;
     // let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#question'+ this.questionNumber);
     // this.pageScrollService.start(pageScrollInstance);
-    this.scroller=this.scroller+790;
+    this.scroller=this.scroller+810;
     this.content.scrollTo(0,this.scroller,1000);
   }
   ngOnInit() {
