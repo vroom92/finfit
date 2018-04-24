@@ -10,12 +10,15 @@ import { ModalPage } from '../pages/modal/modal';
 import { ScoreBoardPage } from '../pages/score-board/score-board';
 import {  YosemitePage } from '../pages/yosemite/yosemite';
 import { ProfilePage } from '../pages/profile/profile';
+import { QuestionpagePage } from '../pages/questionpage/questionpage';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import {IonTagsInputModule} from "ionic-tags-input";
+
 
 @NgModule({
   declarations: [
@@ -27,14 +30,16 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ModalPage,
     ScoreBoardPage,
     YosemitePage,
-    ProfilePage
+    ProfilePage,
+    QuestionpagePage
     ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
     NgxDatatableModule,
-    ProgressBarModule
+    ProgressBarModule,
+    IonTagsInputModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +51,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ModalPage,
     ScoreBoardPage,
     YosemitePage,
-    ProfilePage
+    ProfilePage,
+    QuestionpagePage
   ],
   providers: [
     StatusBar,

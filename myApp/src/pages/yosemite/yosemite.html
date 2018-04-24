@@ -39,8 +39,7 @@
 <ion-content class="scroll-content" >
   <div *ngFor=" let item of questions" class="ion-list" >
   <section id = "question{{item.id}}" class = "question{{item.id}}"><div class="caption">
-    <span class = "border">Question {{item.id}}<br>
-      {{item.question}}    </span>
+    <span class = "border">Question {{item.id}}<br>{{item.question}}</span>
       <div *ngFor="let option of item.options">
         <button class="buttonCustom" *ngIf="item.id < 4" (click)="changeProgress(option,item.id)">{{option}}</button>
         <button class="buttonCustom" *ngIf="item.id == 4" (click)="changeProgressFinal(option,item.id)">{{option}}</button>
