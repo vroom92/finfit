@@ -10,7 +10,7 @@ export class HomePage {
   galleryType = 'regular';
   constructor(public navCtrl: NavController) { }
 
-  gototrail(){
+  gototrail1(){
     //this.navCtrl.push(YosemitePage);
     this.navCtrl.setRoot(YosemitePage);
   }
