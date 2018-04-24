@@ -23,7 +23,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.85;
+    opacity: 0.65;
     position:relative;
   }
 
@@ -42,7 +42,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.80;
+    opacity: 0.60;
     position:relative;
 
 
@@ -52,7 +52,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.80;
+    opacity: 0.65;
     position:relative;
 
 
@@ -61,7 +61,7 @@ page-yosemite {
     background-color: transparent;
     font-size:25px;
     font-family: "Lato";
-    color: #f7f7f7;
+    color: white;
     font-weight: bold;
   }
   .caption{
@@ -71,6 +71,7 @@ page-yosemite {
     width: 100%;
     text-align: center;
     color: #000;
+
   }
   div {
     display: block;
@@ -79,6 +80,34 @@ page-yosemite {
     margin-top: -5px;
     margin-left: -100px;
   }
+
+  .buttonCustom{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    font-weight: bold;
+  }
+.buttonCustom:hover{
+  background-color: #008CBA;
+  color: white;
+  font-weight: bold;
+}
+
+.cardContent{
+  background-color: rgba(255,255,255,0.5);
+}
+
   .stupidbtn{
     font-size: 17px;
     text-transform: uppercase;

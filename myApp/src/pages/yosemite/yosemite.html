@@ -53,13 +53,12 @@
 <ion-content padding>
   <div *ngFor=" let item of questions" >
   <section class = "question{{item.id}}"><div class="caption">
-    <span class = "border">QUESTION{{item.id}} {{item.question}}
-      <div *ngFor=" let option of item.options">
+    <span class = "border">QUESTION{{item.id}} {{item.question}}    </span>
+      <div *ngFor="let option of item.options">
            <!-- <label><input type="radio" name="optradio{{item.id}}" value="{{option}}">{{option}}</label> -->
            <!-- <button>{{option}}</button> -->
-          <button class="stupidbtn" (click)="changeProgress(option)">{{option}}</button>
+          <button class="buttonCustom" (click)="changeProgress(option)">{{option}}</button>
       </div>
-    </span>
     </div>
     </section>
   </div>
