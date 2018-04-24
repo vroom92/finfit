@@ -33,7 +33,7 @@ export class YosemitePage {
 
   public questions: any;
   public progress: number;
-
+  public scroller: number =0;
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
   }
   timeInSeconds: number= 15;
@@ -56,14 +56,20 @@ export class YosemitePage {
     alert.present();
   }
 
+
   goToNext(){
     //this.timeInSeconds=15;
+    let scrollTop = this.content.scrollTop;
+    //let contentHeight = dimensions.contentHeight;
+    //let scrollHeight = dimensions.scrollHeight;
+
     this.initTimer();
     this.startTimer();
     // this.questionNumber=this.questionNumber+1;
     // let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#question'+ this.questionNumber);
     // this.pageScrollService.start(pageScrollInstance);
-    this.content.scrollToBottom(300);
+    this.scroller=this.scroller+790;
+    this.content.scrollTo(0,this.scroller,1000);
   }
   ngOnInit() {
     this.initTimer();
