@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { HttpClient } from '@angular/common/http';
 import { Content } from 'ionic-angular';
 import { ScoreBoardPage } from '../score-board/score-board';
-import { ProfilePage } from '../profile/profile';
+import { QuestionpagePage } from '../questionpage/questionpage';
 /**
  * Generated class for the YosemitePage page.
  *
@@ -73,9 +73,9 @@ export class YosemitePage {
           }
         },
         {
-          text: 'Profile',
+          text: 'Ask a Question',
           handler: data => {
-            this.navCtrl.setRoot(ProfilePage);
+            this.navCtrl.setRoot(QuestionpagePage);
           }
         }
       ]
