@@ -36,10 +36,11 @@
 </ion-header>
 
 
-<ion-content>
-  <div *ngFor=" let item of questions" >
-  <section class = "question{{item.id}}"><div class="caption">
-    <span class = "border">QUESTION{{item.id}} {{item.question}}    </span>
+<ion-content class="scroll-content" >
+  <div *ngFor=" let item of questions" class="ion-list" >
+  <section id = "question{{item.id}}" class = "question{{item.id}}"><div class="caption">
+    <span class = "border">Question {{item.id}}<br>
+      {{item.question}}    </span>
       <div *ngFor="let option of item.options">
            <!-- <label><input type="radio" name="optradio{{item.id}}" value="{{option}}">{{option}}</label> -->
            <!-- <button>{{option}}</button> -->

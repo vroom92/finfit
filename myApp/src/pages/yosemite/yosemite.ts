@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
+import { Content } from 'ionic-angular';
 
 /**
  * Generated class for the YosemitePage page.
@@ -27,6 +28,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'yosemite.html',
 })
 export class YosemitePage {
+  @ViewChild(Content) content: Content;
   public tscore: number = 0;
 
   public questions: any;
@@ -36,7 +38,7 @@ export class YosemitePage {
   }
   timeInSeconds: number= 15;
   timer: CountdownTimer;
-
+  questionNumber: number=1;
 
   presentAlert(text) {
     let alert = this.alertCtrl.create({
@@ -58,6 +60,10 @@ export class YosemitePage {
     //this.timeInSeconds=15;
     this.initTimer();
     this.startTimer();
+    // this.questionNumber=this.questionNumber+1;
+    // let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#question'+ this.questionNumber);
+    // this.pageScrollService.start(pageScrollInstance);
+    this.content.scrollToBottom(300);
   }
   ngOnInit() {
     this.initTimer();
@@ -154,5 +160,4 @@ export class YosemitePage {
     //this.startTimer();
 
   }
-
 }

@@ -16,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +28,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ScoreBoardPage,
     YosemitePage,
     ProfilePage
-  ],
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
