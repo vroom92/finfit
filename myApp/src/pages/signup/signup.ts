@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 //import {FormBuilder, Validators} from '@angular/common';
+import { LoginPage} from '../login/login';
 
 /**
  * Generated class for the SignupPage page.
@@ -20,16 +21,31 @@ import { HttpClient } from '@angular/common/http';
 export class SignupPage {
 
   img1:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignupPage');
   }
-
+  confirmEmailAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Verification',
+      subTitle: 'Kindly confirm the email you have received',
+      buttons: [
+        {
+          text: 'OKAY',
+          handler: data => {
+            this.navCtrl.setRoot(LoginPage);
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
   signup(data){
 
     console.log("here");
+    this.confirmEmailAlert();
 
 		//	var link = 'C:\Users\Chirag\Downloads\error.json.txt';
 
