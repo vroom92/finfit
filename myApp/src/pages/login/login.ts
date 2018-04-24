@@ -22,7 +22,7 @@ export class LoginPage {
   }
   gotohome(){
     //this.navCtrl.push(HomePage);
-    this.navCtrl.goToRoot();
+    this.navCtrl.setRoot(HomePage);
   }
   loginPopUp() {
     let alert = this.alertCtrl.create({
@@ -61,7 +61,7 @@ export class LoginPage {
   }
 
   gotosignup(){
-    this.navCtrl.push(SignupPage);
+    this.navCtrl.setRoot(SignupPage);
   }
 
   public openModal(){

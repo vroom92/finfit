@@ -12,5 +12,6 @@ export class HomePage {
 
   gototrail(){
     this.navCtrl.push(YosemitePage);
+    //this.navCtrl.setRoot(YosemitePage);
   }
 }
