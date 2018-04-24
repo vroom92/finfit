@@ -17,20 +17,45 @@
 
 
 <ion-content padding>
-    <div class = "tabs" >
+  <ion-slides pager>
+
+      <ion-slide style="background-color: white">
+              <div><h2 style='color: Blue'>Global</h2></div>
+              <div class = 'table'>
+                 <ngx-datatable
+                   [sortType]="'multi'"
+                   [headerHeight]="50"
+                   [footerHeight]="50"
+                   [rowHeight]="50"
+                   [rows]="rows"
+                   [columns]="columns"
+                   [columnMode]="'force'"
+                   [limit]="10">
+                 </ngx-datatable>
+               </div>
+      </ion-slide>
+
+      <ion-slide style="background-color: white">
+        <div><h2 style='color: Blue'>National</h2></div>
+        <div class = 'table'>
+           <ngx-datatable
+             [sortType]="'multi'"
+             [headerHeight]="50"
+             [footerHeight]="50"
+             [rowHeight]="50"
+             [rows]="rows"
+             [columns]="columns"
+             [columnMode]="'force'"
+             [limit]="10">
+           </ngx-datatable>
+         </div>
+      </ion-slide>
+
+
+  </ion-slides>
+    <!--<div class = "tabs" >
        <button class = "tab-item" padding >Regional</button>
        <button class = "tab-item" padding >Global</button>
-    </div>
-    <div>
-       <ngx-datatable
-         [sortType]="'multi'"
-         [headerHeight]="50"
-         [footerHeight]="50"
-         [rowHeight]="50"
-         [rows]="rows"
-         [columns]="columns"
-         [columnMode]="'force'"
-         [limit]="10">
-       </ngx-datatable>
-     </div>
+    </div> -->
+
 </ion-content>

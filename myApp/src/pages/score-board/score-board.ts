@@ -25,8 +25,8 @@ export class ScoreBoardPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public _HTTP   	: HttpClient) {
     this.columns = [
         { prop: 'rank' },
-        { name: 'name' },
-        { name: 'points' }
+        { name: 'Name' },
+        { name: 'Points' }
       ];
   }
 
