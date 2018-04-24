@@ -13,6 +13,10 @@ import { ProfilePage } from '../profile/profile';
  export interface Config {
 	banking: string;
 }
+
+export interface Config {
+ leaderboard: string;
+}
  export interface CountdownTimer {
    seconds: number;
    secondsRemaining: number;
@@ -31,7 +35,7 @@ import { ProfilePage } from '../profile/profile';
 export class YosemitePage {
   @ViewChild(Content) content: Content;
   public tscore: number = 0;
-
+  public config : Config;
   public questions: any;
   public progress: number;
   public scroller: number =0;
