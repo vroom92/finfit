@@ -26,6 +26,7 @@ export class ScoreBoardPage {
     this.columns = [
         { prop: 'rank' },
         { name: 'Name' },
+        { name : 'Questions'},
         { name: 'Points' }
       ];
   }
