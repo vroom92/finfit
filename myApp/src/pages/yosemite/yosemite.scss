@@ -1,9 +1,18 @@
 page-yosemite {
+    .scroll-content {
+    overflow: hidden;
+  }
+
+  ion-list {
+    overflow-y: auto;
+    max-height: 72vh;
+  }
+
   .fill {
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden
+      overflow: hidden;
   }
   .fill img {
       flex-shrink: 0;
@@ -23,7 +32,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.65;
+    opacity: 0.85;
     position:relative;
   }
 
@@ -42,7 +51,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.60;
+    opacity: 0.80;
     position:relative;
 
 
@@ -52,7 +61,7 @@ page-yosemite {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.65;
+    opacity: 0.80;
     position:relative;
 
 
@@ -61,7 +70,7 @@ page-yosemite {
     background-color: transparent;
     font-size:25px;
     font-family: "Lato";
-    color: white;
+    color: #f7f7f7;
     font-weight: bold;
   }
   .caption{

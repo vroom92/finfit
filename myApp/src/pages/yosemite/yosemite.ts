@@ -126,5 +126,4 @@ export class YosemitePage {
     this.progress+=25;
     this.presentAlert();
   }
-
 }
