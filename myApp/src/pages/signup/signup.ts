@@ -30,7 +30,7 @@ export class SignupPage {
   confirmEmailAlert() {
     let alert = this.alertCtrl.create({
       title: 'Verification',
-      subTitle: 'Kindly confirm the email you have received',
+      subTitle: '<br>A confirmation E-mail has been sent to your registered mail id!',
       buttons: [
         {
           text: 'OKAY',
@@ -47,43 +47,6 @@ export class SignupPage {
     console.log("here");
     this.confirmEmailAlert();
 
-		//	var link = 'C:\Users\Chirag\Downloads\error.json.txt';
-
-			//using http post as we are passing password.
-		/*	this.http.post(link, {fn : data.fname, ln : data.lname, em: data.email, ps : data.password, cp: data.confirm, pic : data.photo })
-			.then(function (res){	 //if a response is recieved from the server.
-
-				$scope.response = res.data.result; //contains Register Result
-
-				//Shows the respective popup and removes back link
-				if($scope.response.created=="1"){
-						$scope.title="Account Created!";
-						$scope.template="Your account has been successfully created!";
-
-						//no back option
-						$ionicHistory.nextViewOptions({
-							disableAnimate: true,
-							disableBack: true
-						});
-						// the user is redirected to login page after sign up
-						$state.go('login', {}, {location: "replace", reload: true});
-
-				}else if($scope.response.exists=="1"){
-					$scope.title="Email Already exists";
-					$scope.template="Please click forgot password if necessary";
-
-				}else{
-					$scope.title="Failed";
-					$scope.template="Contact Our Technical Team";
-				}
-
-				var alertPopup = $ionicPopup.alert({
-						title: $scope.title,
-						template: $scope.template
-				});
-
-
-			}); */
 	}
 
   fileChange(event){
