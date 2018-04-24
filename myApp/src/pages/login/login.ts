@@ -21,7 +21,8 @@ export class LoginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl : ModalController, public alertCtrl: AlertController) {
   }
   gotohome(){
-    this.navCtrl.push(HomePage);
+    //this.navCtrl.push(HomePage);
+    this.navCtrl.goToRoot();
   }
   loginPopUp() {
     let alert = this.alertCtrl.create({
