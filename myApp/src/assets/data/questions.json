@@ -9,7 +9,7 @@
         "There could be monthly withdrawal restrictions on Savings accounts",
         "All of the above"
     ],
-    "answer" : "option4"
+    "answer" : "All of the above"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
          "Yes",
           "No"
       ],
-      "answer" : "option1"
+      "answer" : "Yes"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
           "The Same Amount",
           "Buy Less"
       ],
-      "answer" : "option3"
+      "answer" : "Buy Less"
     },
     {
       "id": 4,
@@ -39,7 +39,7 @@
           "By mailing my check in",
           "All of the above"
       ],
-      "answer" : "option4"
+      "answer" : "All of the above"
     }
   ]
 }

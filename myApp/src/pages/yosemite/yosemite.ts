@@ -37,10 +37,10 @@ export class YosemitePage {
   timer: CountdownTimer;
 
 
-  presentAlert() {
+  presentAlert(text) {
     let alert = this.alertCtrl.create({
       title: 'ScoreBoard',
-      subTitle: 'Chaa gya tu to ',
+      subTitle: text,
       buttons: ['Dismiss']
     });
     alert.present();
@@ -121,10 +121,17 @@ export class YosemitePage {
 
   }
 
-  changeProgress(answer){
-    console.log(answer);
+  changeProgress(userchoice,id){
+    console.log(userchoice,id);
+    console.log(this.questions[id-1].answer);
+    if(userchoice===this.questions[id-1].answer){
+      this.presentAlert("Correct");
+    }
+    else{
+      this.presentAlert("Incorrect");
+    }
     this.progress+=25;
-    this.presentAlert();
+
   }
 
 }
