@@ -34,7 +34,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     IonicModule.forRoot(MyApp),
     HttpClientModule,
     NgxDatatableModule,
-    ProgressBarModule,
+    ProgressBarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
