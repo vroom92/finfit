@@ -40,7 +40,7 @@ export class YosemitePage {
   public progress: number;
   public scroller: number =0;
   public audio : any;
-  public audio2 : any ; 
+  public audio2 : any ;
   constructor( public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
   }
   timeInSeconds: number= 15;
@@ -49,7 +49,7 @@ export class YosemitePage {
 
   presentAlert(text) {
     let alert = this.alertCtrl.create({
-      title: 'ScoreBoard',
+      title: '<center>ScoreBoard</center>',
       subTitle: text,
       buttons: [
         {
@@ -66,7 +66,7 @@ export class YosemitePage {
   lastAlert(text) {
     this.audio2.pause();
     let alert = this.alertCtrl.create({
-      title: 'ScoreBoard',
+      title: '<center>ScoreBoard</center>',
       subTitle: text,
       buttons: [
         {

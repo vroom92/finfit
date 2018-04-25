@@ -50,7 +50,7 @@ export class CustomPage {
 
   presentAlert(text) {
     let alert = this.alertCtrl.create({
-      title: 'ScoreBoard',
+      title: '<center>ScoreBoard</center>',
       subTitle: text,
       buttons: [
         {
@@ -67,7 +67,7 @@ export class CustomPage {
   lastAlert(text) {
     this.audio2.pause();
     let alert = this.alertCtrl.create({
-      title: 'ScoreBoard',
+      title: '<center>ScoreBoard</center>',
       subTitle: text,
       buttons: [
         {
