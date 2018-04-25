@@ -8,7 +8,7 @@
         "False"
     ],
     "answer" : "False",
-    "description": ""
+    "description": "Mutual funds are actively managed baskets of stocks. It provides more diversification than an individual stock. Investing in a single company has risk. If you invest the same $500 in a mutual fund which have several stocks inside, if one company flounders, you would not lose your entire investment."
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
           "False"
       ],
       "answer" : "True",
-      "description": ""
+      "description": "ETFs don't often have large fees that are associated with some mutual funds. But because ETFs are traded like stocks, you typically pay a commission to buy and sell them. Although there are some commission-free ETFs in the market, they might have higher expense ratios to recover expenses lost from being fee-free."
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
           "FTSE 100"
       ],
       "answer" : "FTSE 100",
-      "description": ""
+      "description": "NASDAQ Composite, Dow Jones Industrial Average, and S&P 500 are three major U.S. stock indices whereas the major stock indices for Japan and British are Nikkei 225 and FTSE 100."
     },
     {
       "id": 4,
@@ -41,7 +41,7 @@
           "Emerging Market Equities"
       ],
       "answer" : "Money Market funds",
-      "description": ""
+      "description": "Equities is the riskiest class of assets. Dividends aside, they offer no guarantees, and investors' money is subject to the successes and failures of private businesses in a fiercely competitive marketplace. After equities, real estate subjects its investors to the most risk. The meltdown of 2008 demonstrated that real estate does not always appreciate in value."
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
         "Anytime when one feels the need to provide protection to the family"
     ],
     "answer" : "Anytime when one feels the need to provide protection to the family",
-    "description": ""
+    "description": "The optimal age for purchasing life insurance is technically right after birth. Life insurance is age-banded, which means that as each year passes, a policy becomes more expensive. There are arguments for and against a parent or relative purchasing life insurance for a newborn."
     },
     {
       "id": 6,
@@ -63,7 +63,7 @@
         "No"
     ],
     "answer" : "Yes",
-    "description": ""
+    "description": "Good grades can help you succeed in life and pay off in lower car insurance rates. Most insurers offer discounts to young drivers who meet at least one of these criteria: Have at least a 3.0 grade point or “B” average, Make the dean’s list, Make the honor roll, are home-schooled and score in the top 20% on an acceptable standardized test, such as the PSAT, SAT or ACT."
     }
   ]
 }
