@@ -17,35 +17,39 @@
 
 
 <ion-content padding="true">
+
+
+      <img class="img" *ngIf="img1" [src]="img1"/>
+
   <div class="signlist">
 
   <ion-list>
     <ion-item>
-      <ion-label color="primary">First Name</ion-label>
-      <ion-input placeholder="Text Input" ng-model="data.fname"></ion-input>
+      <ion-label color="primary"><font size = "5">First Name</font></ion-label>
+      <ion-input placeholder="" ng-model="data.fname"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="primary">Last Name</ion-label>
-      <ion-input placeholder="Text Input" ng-model="data.lname"></ion-input>
+      <ion-label color="primary"><font size = "5">Last Name</font></ion-label>
+      <ion-input placeholder="" ng-model="data.lname"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="primary">Email</ion-label>
-      <ion-input type="email" placeholder="Email Input" ng-model="data.email"></ion-input>
+      <ion-label color="primary"><font size = "5">Email</font></ion-label>
+      <ion-input type="email" placeholder="" ng-model="data.email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="primary">Password</ion-label>
-      <ion-input type="password" placeholder="Password Input" ng-model="data.password"></ion-input>
+      <ion-label color="primary"><font size = "5">Password</font></ion-label>
+      <ion-input type="password" placeholder="" ng-model="data.password"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="primary">Confirm Password</ion-label>
-      <ion-input type="password" placeholder="Password Input" ng-model="data.confirm"></ion-input>
+      <ion-label color="primary"><font size = "5">Confirm Password</font></ion-label>
+      <ion-input type="password" placeholder="" ng-model="data.confirm"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="primary">Upload Avtar</ion-label>
+      <ion-label color="primary"><font size = "5">Upload Avtar</font></ion-label>
       <ion-input type = "file" value="" (change)="fileChange($event)" ng-model="data.photo"></ion-input>
     </ion-item>
   </ion-list>
-  <img *ngIf="img1" [src]="img1"/>
+  <!-- <img *ngIf="img1" [src]="img1"/> -->
   <div class = 'signUpButton'><button (click)="signup(data)" ion-button round>Sign Up!</button></div>
 </div>
 
