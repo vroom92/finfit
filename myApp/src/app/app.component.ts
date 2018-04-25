@@ -8,7 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { ScoreBoardPage} from '../pages/score-board/score-board';
 import { ProfilePage } from '../pages/profile/profile';
 import { QuestionpagePage } from '../pages/questionpage/questionpage';
-import { CustomPage } from "../pages/custom/custom";
+//import { CustomPage } from "../pages/custom/custom";
 
 
 @Component({
@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'LeaderBoard', component: ScoreBoardPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Question', component: QuestionpagePage},
-      { title: 'Custom', component: CustomPage}
+//      { title: 'Custom', component: CustomPage}
     ];
 
   }
