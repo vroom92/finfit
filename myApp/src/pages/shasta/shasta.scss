@@ -1,0 +1,172 @@
+page-shasta {
+  .scroll-content {
+  overflow: hidden;
+}
+
+ion-list {
+  overflow-y: auto;
+  max-height: 72vh;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+margin:0;
+padding:0;
+
+section{
+  width: 100%;
+  height:100vh;
+  box-sizing: border-box;
+}
+section.question1{
+  background: url("../../assets/imgs/Yosemite/quiz/1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.85;
+  position:relative;
+}
+
+section.question2{
+  background: url("../../assets/imgs/Yosemite/quiz/2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.7;
+  position:relative;
+
+
+}
+section.question3{
+  background: url("../../assets/imgs/Yosemite/quiz/3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+
+
+}
+section.question4{
+  background: url("../../assets/imgs/Yosemite/quiz/4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+}
+section.question5{
+  background: url("../../assets/imgs/Yosemite/quiz/5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+}
+section.question6{
+  background: url("../../assets/imgs/Yosemite/quiz/6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+}
+section.question7{
+  background: url("../../assets/imgs/Yosemite/quiz/7.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+}
+section.question8{
+  background: url("../../assets/imgs/Yosemite/quiz/8.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.80;
+  position:relative;
+}
+span.border{
+  background-color: transparent;
+  font-size:40px;
+  font-family: "Lato";
+  //color: #f7f7f7;
+  color: black;
+  font-weight: bold;
+}
+.optText{
+  font-size:22px;
+  font-family: "Lato";
+}
+.caption{
+  position: absolute;
+  left:0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+.ques{
+  background-color: rgba(255,255,255,0.8);
+}
+div {
+  display: block;
+}
+.cdTimer{
+  margin-top: -5px;
+  margin-left: -100px;
+}
+
+.buttonCustom{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
+  color: black;
+  font-weight: bold;
+}
+.buttonCustom:hover{
+background-color: #008CBA;
+color: white;
+font-weight: bold;
+}
+
+.cardContent{
+background-color: rgba(255,255,255,0.5);
+}
+
+.stupidbtn{
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: #679efc;
+  height: 20px;
+  //width: 100%;
+  //font-weight: bold;
+  color: #FFF;
+  font-family: "Lato";
+}
+.yosembutton{
+  padding-top: 12%;
+  padding-left: 40px;
+}
+}

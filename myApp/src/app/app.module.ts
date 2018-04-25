@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import {IonTagsInputModule} from "ionic-tags-input";
 import { CustomPage } from "../pages/custom/custom";
+import { ShastaPage } from "../pages/shasta/shasta";
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CustomPage } from "../pages/custom/custom";
     YosemitePage,
     ProfilePage,
     QuestionpagePage,
-    CustomPage
+    CustomPage,
+    ShastaPage
 
     ],
   imports: [
@@ -55,7 +57,8 @@ import { CustomPage } from "../pages/custom/custom";
     YosemitePage,
     ProfilePage,
     QuestionpagePage,
-    CustomPage
+    CustomPage,
+    ShastaPage
 
   ],
   providers: [
