@@ -5,23 +5,22 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Profile</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding="true">
-  <ion-content>
-      <img class='img' src="../../assets/imgs/photo.png"/>
-  </ion-content>
-  <div class="profilelist">
-
+<ion-content padding>
+  <br><br>
+  <ion-row>
+    <ion-col col-md-3>
+      <img src="../../assets/imgs/photo.png"/><br/><br/>
+      <button class="change" ion-button round>Change Avtar</button>
+    </ion-col>
+    <ion-col col-md-9>
   <ion-list>
     <ion-item>
       <ion-label color="primary">Full Name</ion-label>
@@ -44,8 +43,21 @@
       <ion-label color="secondary">Key, Star</ion-label>
     </ion-item>
   </ion-list>
-  <img *ngIf="img1" [src]="img1"/>
-  <div class = 'saveProfileButton'><button (click)="saveProfile(data)" ion-button round>Save Profile</button></div>
-</div>
-
+</ion-col>
+</ion-row>
+<br>
+<ion-row >
+    <ion-col col-md-3 >
+      <img class="badges" src="../../assets/imgs/badges/badge1.jpg"/>
+    </ion-col>
+    <ion-col col-md-3 >
+      <img class="badges" src="../../assets/imgs/badges/badge4.jpg"/>
+    </ion-col>
+    <ion-col col-md-3 >
+      <img class="badges" src="../../assets/imgs/badges/badge2.png"/>
+    </ion-col>
+    <ion-col col-md-3 >
+      <img class="badges" src="../../assets/imgs/badges/badge6.png"/>
+    </ion-col>
+</ion-row>
 </ion-content>
