@@ -1,4 +1,4 @@
-page-sanfrancisco {
+page-custom {
   .scroll-content {
   overflow: hidden;
 }
@@ -28,7 +28,7 @@ section{
   box-sizing: border-box;
 }
 section.question1{
-  background: url("../../assets/imgs/Yosemite/quiz/1.jpg");
+  background: url("../../assets/imgs/StreetView/SV1.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -37,7 +37,7 @@ section.question1{
 }
 
 section.question2{
-  background: url("../../assets/imgs/Yosemite/quiz/2.jpg");
+  background: url("../../assets/imgs/StreetView/SV2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -47,7 +47,7 @@ section.question2{
 
 }
 section.question3{
-  background: url("../../assets/imgs/Yosemite/quiz/3.jpg");
+  background: url("../../assets/imgs/StreetView/SV3.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -57,7 +57,7 @@ section.question3{
 
 }
 section.question4{
-  background: url("../../assets/imgs/Yosemite/quiz/4.jpg");
+  background: url("../../assets/imgs/StreetView/SV4.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -65,31 +65,7 @@ section.question4{
   position:relative;
 }
 section.question5{
-  background: url("../../assets/imgs/Yosemite/quiz/5.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.80;
-  position:relative;
-}
-section.question6{
-  background: url("../../assets/imgs/Yosemite/quiz/6.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.80;
-  position:relative;
-}
-section.question7{
-  background: url("../../assets/imgs/Yosemite/quiz/7.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.80;
-  position:relative;
-}
-section.question8{
-  background: url("../../assets/imgs/Yosemite/quiz/8.jpg");
+  background: url("../../assets/imgs/StreetView/SV5.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -151,22 +127,23 @@ color: white;
 font-weight: bold;
 }
 
-.cardContent{
-background-color: rgba(255,255,255,0.5);
-}
+// .cardContent{
+// background-color: rgba(255,255,255,0.5);
+// }
 
-.stupidbtn{
-  font-size: 17px;
-  text-transform: uppercase;
-  background-color: #679efc;
-  height: 20px;
-  //width: 100%;
-  //font-weight: bold;
-  color: #FFF;
-  font-family: "Lato";
-}
+// .stupidbtn{
+//   font-size: 17px;
+//   text-transform: uppercase;
+//   background-color: #679efc;
+//   height: 20px;
+//   //width: 100%;
+//   //font-weight: bold;
+//   color: #FFF;
+//   font-family: "Lato";
+// }
 .yosembutton{
   padding-top: 12%;
   padding-left: 40px;
 }
+
 }

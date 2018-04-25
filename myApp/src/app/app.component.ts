@@ -4,11 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { ScoreBoardPage} from '../pages/score-board/score-board';
 import { ProfilePage } from '../pages/profile/profile';
 import { QuestionpagePage } from '../pages/questionpage/questionpage';
+import { CustomPage } from "../pages/custom/custom";
 
 
 @Component({
@@ -28,10 +28,10 @@ export class MyApp {
     this.pages = [
       { title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
       { title: 'LeaderBoard', component: ScoreBoardPage},
       { title: 'Profile', component: ProfilePage},
-      { title: 'Question', component: QuestionpagePage}
+      { title: 'Question', component: QuestionpagePage},
+      { title: 'Custom', component: CustomPage}
     ];
 
   }

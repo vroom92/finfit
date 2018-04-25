@@ -1,5 +1,5 @@
 <!--
-  Generated template for the SanfranciscoPage page.
+  Generated template for the CustomPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -20,23 +20,21 @@
   <ion-col col-md-1>
   </ion-col>
     <ion-col col-md-1>
-      <!--<ion-card *ngIf="timer"> -->
-      	<!--<ion-card-header> -->
-        <div class = "cdTimer">
-      		<button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>
-      		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
-        </div>
-    </ion-col>
-    <ion-col col-md-4>
-      <button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">Total Score: {{tscore}}</button>
-    </ion-col>
-  </ion-row>
+      <div class = "cdTimer">
+        <button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>
+        <button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
+      </div>
+  </ion-col>
+  <ion-col col-md-4>
+    <button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">Total Score: {{tscore}}</button>
+  </ion-col>
+</ion-row>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="scroll-content" >
+<ion-content class="scroll-content">
   <div *ngFor=" let item of questions" class="ion-list" >
   <section id = "question{{item.id}}" class = "question{{item.id}}"><div class="caption">
 
@@ -52,13 +50,11 @@
       </ion-col>
     </ion-row><br>
       <div *ngFor="let option of item.options">
-        <button class="buttonCustom" *ngIf="item.id < 8" (click)="changeProgress(option,item.id)"><span class="optText">{{option}}</span></button>
-        <button class="buttonCustom" *ngIf="item.id == 8" (click)="changeProgressFinal(option,item.id)"><span class="optText">{{option}}</span></button>
+        <button class="buttonCustom" *ngIf="item.id < 5" (click)="changeProgress(option,item.id)"><span class="optText">{{option}}</span></button>
+        <button class="buttonCustom" *ngIf="item.id == 5" (click)="changeProgressFinal(option,item.id)"><span class="optText">{{option}}</span></button>
       </div>
     </div>
     </section>
   </div>
-
-
 
 </ion-content>
