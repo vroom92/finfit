@@ -1,0 +1,60 @@
+{
+  "banking" : [
+    {
+      "id": 1,
+      "question" : "What happens to my credit score when I take a loan?",
+      "options": [
+         "It goes down",
+          "It goes up",
+          "It remains unaffected"
+      ],
+      "answer" : "It goes down",
+      "description": "New and existing loans can affect your credit in several ways: They help you build credit if you successfully make payments. They hurt your credit if you pay late or default on loans. They also reduce your ability to borrow."
+    },
+    {
+      "id": 2,
+      "question" : "What typically happens when I go over my spending limit on a credit card?",
+      "options": [
+         "I will have to pay interest on the advance",
+          "Nothing, I can just keep spending",
+          "I have to call the card company"
+      ],
+      "answer" : "I will have to pay interest on the advance",
+      "description": "Some card issuers may allow charges that exceed your credit limit, but they typically charge an over-limit fee of up to $25 the first time you go over your limit and up to $35 if you do it again within six months."
+    },
+    {
+    "id": 3,
+    "question" : "What is the difference between a fixed rate and a floating rate loan?",
+    "options": [
+        "In a floating rate loan, the interest rate can change after a certain term",
+        "Fixed rate loans are good to buy large houses and not apartments",
+        "One can borrow more with floating rate loans",
+        "All of the above"
+    ],
+    "answer" : "In a floating rate loan, the interest rate can change after a certain term",
+    "description": "Fixed interest rate loans are loans in which the interest rate charged on the loan will remain fixed for that loan's entire term, no matter what market interest rates do. A variable interest rate loan is a loan in which the interest rate charged on the outstanding balance varies as market interest rates change. As a result, your payments will vary as well."
+    },
+    {
+      "id": 4,
+      "question" : "A 15-year loan typically requires higher monthly payments than a 30-year loan but the total interest over the life of the loan will be less.",
+      "options": [
+         "True",
+         "False"
+      ],
+      "answer" : "True",
+      "description": "The first thing to look at is the difference in monthly payments between a 15-year mortgage and a 30-year loan. Fifteen-year mortgages do charge lower interest rates than 30-year loans but carry higher monthly payments because you have to pay all principal back in half the time."
+    },
+    {
+      "id": 5,
+      "question" : "Your credit score is important because:",
+      "options": [
+         "It can affect your interest rate if you finance a car or home",
+         "It can have an impact on whether you can finance major purchases",
+         "It can determine whether you can get credit cards",
+         "All of the above"
+      ],
+      "answer" : "All of the above",
+      "description": " Your credit score can help you when you borrow money, can impact your insurance premiums, qualify for better terms when you sign up for cable or Internet and gets access to better financial deals"
+    }
+  ]
+}
