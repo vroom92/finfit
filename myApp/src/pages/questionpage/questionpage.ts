@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController, NavController, NavParams } from 'ionic-angular';
-import { Observable} from 'rxjs/Rx';
 
 /**
  * Generated class for the QuestionpagePage page.
