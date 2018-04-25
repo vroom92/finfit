@@ -27,7 +27,7 @@ export class QuestionpagePage {
   submitForm(){
     //Implement Loading shit
     let loader = this.loadingCtrl.create({
-  content: "Please wait while we create your personal hike to learning...",
+  content: "<h5><b>Please wait while we create your personal hike to learning...</b></h5>",
   duration: 2000
 });
 
