@@ -11,6 +11,7 @@ import { ScoreBoardPage } from '../pages/score-board/score-board';
 import {  YosemitePage } from '../pages/yosemite/yosemite';
 import { ProfilePage } from '../pages/profile/profile';
 import { QuestionpagePage } from '../pages/questionpage/questionpage';
+import { SanfranciscoPage } from '../pages/sanfrancisco/sanfrancisco';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,6 +31,7 @@ import {IonTagsInputModule} from "ionic-tags-input";
     ModalPage,
     ScoreBoardPage,
     YosemitePage,
+    SanfranciscoPage,
     ProfilePage,
     QuestionpagePage
     ],
@@ -52,7 +54,8 @@ import {IonTagsInputModule} from "ionic-tags-input";
     ScoreBoardPage,
     YosemitePage,
     ProfilePage,
-    QuestionpagePage
+    QuestionpagePage,
+    SanfranciscoPage
   ],
   providers: [
     StatusBar,

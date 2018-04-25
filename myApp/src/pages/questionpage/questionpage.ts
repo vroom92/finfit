@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController, NavController, NavParams } from 'ionic-angular';
-
+import { SanfranciscoPage} from '../sanfrancisco/sanfrancisco';
 /**
  * Generated class for the QuestionpagePage page.
  *
@@ -40,6 +40,9 @@ this.myVar=true;
 
   }
 
+  gototrail3(){
+    this.navCtrl.setRoot('SanfranciscoPage');
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestionpagePage');
