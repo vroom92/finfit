@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, LoadingController, NavController, NavParams } from 'ionic-angular';
+import { Observable} from 'rxjs/Rx';
 
 /**
  * Generated class for the QuestionpagePage page.
@@ -14,13 +15,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'questionpage.html',
 })
 export class QuestionpagePage {
-  tags = ['Ionic', 'Angular', 'TypeScript'];
+  tags = ['Banking', 'Investments', 'Mortgage', 'How do I check my credit score?'];
+  public myVar: boolean= false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
   onChange(val){
     console.log(this.tags);
   }
+
+  submitForm(){
+    //Implement Loading shit
+    let loader = this.loadingCtrl.create({
+  content: "Please wait while we create your personal hike to learning...",
+  duration: 2000
+});
+
+loader.onDidDismiss(() => {
+console.log('Dismissed loading');
+this.myVar=true;
+});
+
+  loader.present();
+
+
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestionpagePage');

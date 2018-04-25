@@ -5,24 +5,49 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>questionpage</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
-  <section class = "Header">
+  <section class="Header">
     <div class="caption">
-      <h1>Ask us a question, and let us create a custom trail for you to begin your hike of learning!</h1>
+      <h1>Ask us a question, and let us create you a custom trail for your hike of learning!</h1>
     </div>
-    <div class = "input" col-6>
-      <ion-tags-input col-3 [(ngModel)]="tags" (onChange)="onChange($event)"></ion-tags-input>
-    </div>
+    <ion-row>
+      <ion-col col-md-4>
+      </ion-col>
+      <ion-col col-md-4>
+        <ion-tags-input [(ngModel)]="tags" (onChange)="onChange($event)"></ion-tags-input>
+      </ion-col>
+      <ion-col col-md-4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-md-4>
+      </ion-col>
+      <ion-col col-md-4>
+        <button ion-button block color="secondary" (click)="submitForm()">Create a New trail!</button>
+      </ion-col>
+      <ion-col col-md-4>
+      </ion-col>
+    </ion-row>
+
   </section>
+
+  <div *ngIf="myVar" id="trail" class="trail">
+    <a href="#">
+      <div (click)=gototrail3() class="container">
+      <img src="../../assets/imgs/HomeImages/8.jpg" class="image">
+      <div class="middle">
+        <div class="text">San Francisco</div>
+      </div>
+    </div>
+  </a>
+</div>
 </ion-content>
