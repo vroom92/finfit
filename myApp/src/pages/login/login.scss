@@ -1,16 +1,26 @@
 .dollarlogo{
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   display: block;
+  margin-top: -70px;
   margin-left: auto;
   margin-right: auto;
+}
+.main { background-image: url('../../assets/imgs/loginpage.jpg');
+   height: 55%;
+   width: 100%;
+   background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .heading{
   text-align: center;
-  font-family: "American Typewriter", serif;
-  font-weight: bold;
-  font-size: 40px;
+  //font-family: "American Typewriter", serif;
+  font-family: "Lato";
+  //font-weight: bold;
+  color:#00bdf5;
+  font-size: 110px;
 }
 .center{
   margin: auto;
