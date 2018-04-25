@@ -39,7 +39,9 @@ export class YosemitePage {
   public questions: any;
   public progress: number;
   public scroller: number =0;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
+  public audio : any;
+  public audio2 : any ; 
+  constructor( public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public _HTTP : HttpClient) {
   }
   timeInSeconds: number= 15;
   timer: CountdownTimer;
@@ -62,6 +64,7 @@ export class YosemitePage {
   }
 
   lastAlert(text) {
+    this.audio2.pause();
     let alert = this.alertCtrl.create({
       title: 'ScoreBoard',
       subTitle: text,
@@ -161,6 +164,10 @@ export class YosemitePage {
   }
 
   ionViewDidLoad() {
+    this.audio2 = new Audio();
+    this.audio2.src = "../../../assets/sounds/loop.mp3";
+    this.audio2.load();
+    this.audio2.play();
     console.log('ionViewDidLoad YosemitePage');
     this._HTTP
     .get<Config>('../../assets/data/questions.json')
@@ -176,14 +183,24 @@ export class YosemitePage {
   changeProgress(userchoice,id){
     console.log(userchoice,id);
     console.log(this.questions[id-1].answer);
+    // this.nativeAudio.preloadSimple('uniqueId1', '../../assets/sounds/correct.mp3');
+    // this.nativeAudio.play('uniqueId1');
     this.pauseTimer();
     if(userchoice===this.questions[id-1].answer){
+      this.audio = new Audio();
+      this.audio.src = "../../../assets/sounds/correct-2.wav";
+      this.audio.load();
+      this.audio.play();
       this.tscore += 10*this.timer.secondsRemaining;
       this.presentAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
       10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore+"<br><br><b>Explanation:</b> "+
       this.questions[id-1].description);
     }
     else{
+      this.audio = new Audio();
+      this.audio.src = "../../../assets/sounds/wrong.wav";
+      this.audio.load();
+      this.audio.play();
       this.tscore+=0;
       this.presentAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
@@ -199,12 +216,20 @@ export class YosemitePage {
     console.log(this.questions[id-1].description);
     this.pauseTimer();
     if(userchoice===this.questions[id-1].answer){
+      this.audio = new Audio();
+      this.audio.src = "../../../assets/sounds/correct-2.wav";
+      this.audio.load();
+      this.audio.play();
       this.tscore += 10*this.timer.secondsRemaining;
       this.lastAlert("<b>Nice Correct Answer!</b><br><br>"+"Score for this question "+
       10*this.timer.secondsRemaining+"<br><br>Total Score " +this.tscore+"<br><br><b>Explanation:</b> "+
       this.questions[id-1].description);
     }
     else{
+      this.audio = new Audio();
+      this.audio.src = "../../../assets/sounds/wrong.wav";
+      this.audio.load();
+      this.audio.play();
       this.tscore+=0;
       this.lastAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
