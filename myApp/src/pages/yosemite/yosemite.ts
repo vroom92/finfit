@@ -12,11 +12,12 @@ import { QuestionpagePage } from '../questionpage/questionpage';
  */
  export interface Config {
 	banking: string;
+  leaderboard: string;
 }
 
-export interface Config {
- leaderboard: string;
-}
+// export interface Config {
+//  leaderboard: string;
+// }
  export interface CountdownTimer {
    seconds: number;
    secondsRemaining: number;

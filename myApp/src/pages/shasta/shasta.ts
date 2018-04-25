@@ -13,12 +13,13 @@ import { QuestionpagePage } from '../questionpage/questionpage';
  */
 
  export interface Config {
-  banking: string;
+  investmentinsurance: string;
+  leaderboard: string;
  }
 
- export interface Config {
- leaderboard: string;
- }
+ // export interface Config {
+ // leaderboard: string;
+ // }
  export interface CountdownTimer {
    seconds: number;
    secondsRemaining: number;
@@ -95,9 +96,6 @@ export class ShastaPage {
 
     this.initTimer();
     this.startTimer();
-    // this.questionNumber=this.questionNumber+1;
-    // let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#question'+ this.questionNumber);
-    // this.pageScrollService.start(pageScrollInstance);
     this.scroller=this.scroller+810;
     this.content.scrollTo(0,this.scroller,1000);
   }
@@ -172,10 +170,10 @@ export class ShastaPage {
     this.audio2.play();
     console.log('ionViewDidLoad YosemitePage');
     this._HTTP
-    .get<Config>('../../assets/data/questions.json')
+    .get<Config>('../../assets/data/investmentinsurance.json')
     .subscribe((data) =>
     {
-      this.questions=data.banking;
+      this.questions=data.investmentinsurance;
        console.log(this.questions[0].options);
     });
     this.startTimer();
@@ -207,7 +205,7 @@ export class ShastaPage {
       this.presentAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
-    this.progress+=12.5;
+    this.progress+=16.6;
 
     //this.startTimer();
 
@@ -236,7 +234,7 @@ export class ShastaPage {
       this.lastAlert("<b>Oops Incorrect Answer!</b><br><br>"+"Score for this question 0"+"<br><br>Total Score "
       +this.tscore+"<br><br><b>Explanation:</b> "+this.questions[id-1].description);
     }
-    this.progress+=12.5;
+    this.progress+=16.6 ;
 
     //this.startTimer();
 

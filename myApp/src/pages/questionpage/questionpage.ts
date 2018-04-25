@@ -15,7 +15,7 @@ import { CustomPage } from "../custom/custom";
   templateUrl: 'questionpage.html',
 })
 export class QuestionpagePage {
-  tags = ['Banking', 'Investments', 'Mortgage', 'How do I check my credit score?'];
+  tags = ['Banking', 'Investments'];
   public myVar: boolean= false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {

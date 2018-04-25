@@ -52,8 +52,8 @@
       </ion-col>
     </ion-row><br>
       <div *ngFor="let option of item.options">
-        <button class="buttonCustom" *ngIf="item.id < 8" (click)="changeProgress(option,item.id)"><span class="optText">{{option}}</span></button>
-        <button class="buttonCustom" *ngIf="item.id == 8" (click)="changeProgressFinal(option,item.id)"><span class="optText">{{option}}</span></button>
+        <button class="buttonCustom" *ngIf="item.id < 6" (click)="changeProgress(option,item.id)"><span class="optText">{{option}}</span></button>
+        <button class="buttonCustom" *ngIf="item.id == 6" (click)="changeProgressFinal(option,item.id)"><span class="optText">{{option}}</span></button>
       </div>
     </div>
     </section>

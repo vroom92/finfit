@@ -28,7 +28,7 @@ section{
   box-sizing: border-box;
 }
 section.question1{
-  background: url("../../assets/imgs/Yosemite/quiz/1.jpg");
+  background: url("../../assets/imgs/Shasta/1.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -37,7 +37,7 @@ section.question1{
 }
 
 section.question2{
-  background: url("../../assets/imgs/Yosemite/quiz/2.jpg");
+  background: url("../../assets/imgs/Shasta/2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -47,7 +47,7 @@ section.question2{
 
 }
 section.question3{
-  background: url("../../assets/imgs/Yosemite/quiz/3.jpg");
+  background: url("../../assets/imgs/Shasta/3.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -57,7 +57,7 @@ section.question3{
 
 }
 section.question4{
-  background: url("../../assets/imgs/Yosemite/quiz/4.jpg");
+  background: url("../../assets/imgs/Shasta/4.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -65,7 +65,7 @@ section.question4{
   position:relative;
 }
 section.question5{
-  background: url("../../assets/imgs/Yosemite/quiz/5.jpg");
+  background: url("../../assets/imgs/Shasta/5.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -73,29 +73,14 @@ section.question5{
   position:relative;
 }
 section.question6{
-  background: url("../../assets/imgs/Yosemite/quiz/6.jpg");
+  background: url("../../assets/imgs/Shasta/6.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   opacity: 0.80;
   position:relative;
 }
-section.question7{
-  background: url("../../assets/imgs/Yosemite/quiz/7.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.80;
-  position:relative;
-}
-section.question8{
-  background: url("../../assets/imgs/Yosemite/quiz/8.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.80;
-  position:relative;
-}
+
 span.border{
   background-color: transparent;
   font-size:40px;
