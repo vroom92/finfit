@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController, NavController, NavParams } from 'ionic-angular';
-import { SfPage } from '../sf/sf';
+//import { HomePage } from '../home/home';
+import { CustomPage } from "../custom/custom";
 /**
  * Generated class for the QuestionpagePage page.
  *
@@ -40,8 +41,8 @@ this.myVar=true;
 
   }
 
-  gototrail3(){
-    this.navCtrl.setRoot('SfPage');
+  gototrail5(){
+    this.navCtrl.setRoot(CustomPage);
   }
 
   ionViewDidLoad() {

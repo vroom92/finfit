@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { SfPage } from './sf';
+import { CustomPage } from './custom';
 
 @NgModule({
   declarations: [
-    SfPage,
+    CustomPage,
   ],
   imports: [
-    IonicPageModule.forChild(SfPage),
+    IonicPageModule.forChild(CustomPage),
   ],
 })
-export class SfPageModule {}
+export class CustomPageModule {}

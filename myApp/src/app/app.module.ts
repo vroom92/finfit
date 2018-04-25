@@ -17,6 +17,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import {IonTagsInputModule} from "ionic-tags-input";
+import { CustomPage } from "../pages/custom/custom";
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {IonTagsInputModule} from "ionic-tags-input";
     YosemitePage,
     ProfilePage,
     QuestionpagePage,
+    CustomPage
 
     ],
   imports: [
@@ -53,6 +55,7 @@ import {IonTagsInputModule} from "ionic-tags-input";
     YosemitePage,
     ProfilePage,
     QuestionpagePage,
+    CustomPage
 
   ],
   providers: [
