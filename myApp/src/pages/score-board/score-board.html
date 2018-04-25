@@ -10,17 +10,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>ScoreBoard</ion-title>
+    <ion-title>Wellness Score LeaderBoard</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding class="getstart">
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=1010395395784404&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <ion-slides pager>
 
       <ion-slide >
-              <div><h2 style='color: Black'>Global</h2></div>
+              <button ion-button class="btn" color="light"><span class="optText">National Leaders</span></button>
               <div class = 'table'>
                  <ngx-datatable
                    [sortType]="'multi'"
@@ -33,10 +41,13 @@
                    [limit]="10">
                  </ngx-datatable>
                </div>
+               <a a target="_blank"
+               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+               class="fb-xfbml-parse-ignore"><img class="share" src="../../assets/imgs/fbshare.png"></a>
       </ion-slide>
 
       <ion-slide>
-        <div><h2 style='color: Black'>National</h2></div>
+        <button ion-button class="btn" color="light"><span class="optText">Global Leaders</span></button>
         <div class = 'table'>
            <ngx-datatable
              [sortType]="'multi'"
@@ -49,12 +60,9 @@
              [limit]="10">
            </ngx-datatable>
          </div>
+         <a a target="_blank"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+         class="fb-xfbml-parse-ignore"><img class="share" src="../../assets/imgs/fbshare.png"></a>
       </ion-slide>
-
-
   </ion-slides>
-    <!--<div class = "tabs" >
-       <button class = "tab-item" padding >Regional</button>
-       <button class = "tab-item" padding >Global</button>
-    </div> -->
 </ion-content>

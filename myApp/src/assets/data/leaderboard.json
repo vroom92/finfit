@@ -3,31 +3,26 @@
       {
          "rank" : "1",
          "name" : "Gyan",
-         "questions" : "60",
          "points" : "500"
       },
       {
          "rank" : "2",
          "name" : "Varun",
-         "questions" : "55",
          "points" : "450"
       },
       {
          "rank" : "3",
          "name" : "Saurabh",
-         "questions" : "50",
          "points" : "400"
       },
       {
          "rank" : "...",
          "name" : "...",
-         "questions" : "..",
          "points" : "..."
       },
       {
          "rank" : "66",
          "name" : "Chirag",
-         "questions" : "48",
          "points" : "260"
       }
 

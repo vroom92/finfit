@@ -111,14 +111,14 @@ page-yosemite {
   .caption{
     position: absolute;
     left:0;
-    top: 20%;
+    top: 25%;
     width: 100%;
     text-align: center;
     color: #000;
 
   }
   .ques{
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.8);
   }
   div {
     display: block;
@@ -141,7 +141,7 @@ page-yosemite {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     color: black;
     font-weight: bold;
   }
