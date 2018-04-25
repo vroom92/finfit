@@ -43,6 +43,18 @@
       ],
       "answer" : "True",
       "description": "The first thing to look at is the difference in monthly payments between a 15-year mortgage and a 30-year loan. Fifteen-year mortgages do charge lower interest rates than 30-year loans but carry higher monthly payments because you have to pay all principal back in half the time."
+    },
+    {
+      "id": 5,
+      "question" : "Your credit score is important because:",
+      "options": [
+         "It can affect your interest rate if you finance a car or home",
+         "It can have an impact on whether you can finance major purchases",
+         "It can determine whether you can get credit cards",
+         "All of the above"
+      ],
+      "answer" : "All of the above",
+      "description": " Your credit score can help you when you borrow money, can impact your insurance premiums, qualify for better terms when you sign up for cable or Internet and gets access to better financial deals"
     }
   ]
 }

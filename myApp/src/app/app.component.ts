@@ -29,7 +29,7 @@ export class MyApp {
       { title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'ScoreBoard', component: ScoreBoardPage},
+      { title: 'LeaderBoard', component: ScoreBoardPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Question', component: QuestionpagePage}
     ];

@@ -11,13 +11,21 @@ page-score-board {
     margin-left : 10%;
     margin-right : 10%;
     margin-top: 5%;
+    background-color: rgba(255,255,255,0.8);
   }
 .datatable-header {
       //background: rgba(240, 240, 240, 1);
       padding: 1em 0 0 1em;
       color : White;
    }
-
+   .optText{
+     font-size:40px;
+     font-family: "Lato";
+   }
+   .btn{
+     height: 50px;
+     width: 500px;
+   }
  .datatable-header-cell {
     font-size: 1.4em;
     font-weight: bold;
@@ -26,6 +34,11 @@ page-score-board {
     margin-left : -1.0%;
     color : Black;
     //color : Blue;
+ }
+ .share{
+   margin-top: 15px;
+   height: 10%;
+   width: 20%;
  }
 
  .datatable-body-row {
